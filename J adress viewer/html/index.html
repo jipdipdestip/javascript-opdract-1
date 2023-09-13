@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J adress viewer</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="icon" href="../img/J adress viewer logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <div class="functies">
+        <img src="../img/J adress viewer logo.png" width="150">
+    </div>
+    <div class="wrapper">
+        <div class="lijst">
+            <ul></ul>
+        </div>
+    </div>
+    <div class="align-right">
+        <button class="addbutton gradient" onclick="window.location.href='../html/addpeople.html';">+</button>
+    </div>
+    <div id="userModal" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closeModal"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <h2>informatie gebruiker</h2>
+            <div id="userInfo"></div>
+        </div>
+    </div>
+    <div id="editModal" class="popup">
+        <div class="popup-content2">
+            <span class="close" id="closeEditModal"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <h2>Edit User</h2>
+            <form id="editForm" autocomplete="off">
+                <input type="hidden" id="editUserId" class="edit">
+                <input type="text" id="editName" required class="edit">
+                <input type="text" id="editInfix" class="edit">
+                <input type="text" id="editLastName" required class="edit">
+                <input type="text" id="editStreet" class="edit">
+                <input type="text" id="editStreetNumber" class="edit">
+                <input type="text" id="editPostal" class="edit">
+                <input type="text" id="editCity" class="edit">
+                <button type="submit" class="save">opslaan</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/javascript.js"></script>
+</body>
+
+</html>
