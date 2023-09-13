@@ -14,7 +14,7 @@ function addTask(taskObj) {
   const li = document.createElement('li');
   li.classList.add("gradient");
   li.textContent = `${taskObj.name} ${taskObj.infix} ${taskObj.lastname}`;
-
+  
   const deleteButton = document.createElement("button");
   deleteButton.innerHTML = '<i class="fa fa-trash" aria-hidden="true"></i>';
   li.appendChild(deleteButton);
