@@ -201,13 +201,14 @@ ul{
 
 .functies{
     background-color: rgba(130, 9, 174, 0.374);
-    width: 500px;
+    max-width: 500px;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     box-shadow: rgb(155, 0, 160) 2px 1px 0px 1px;
     box-shadow: 0 0 5px 5px rgba(25, 25, 25, 0.579);
+    min-width: 200px;
 }
 
 .popup {
